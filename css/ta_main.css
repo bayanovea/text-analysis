@@ -1,21 +1,14 @@
+/**
+ * Общие стили
+ */
+
 * {
     font-size: 13px;
 }
 body {
     min-width: 1220px;
 }
-.ta_display-none {
-    display: none;
-}
-.ta_clear {
-    clear: both;
-}
-.ta_hr-show-links {
-    margin-top: 4px;
-    margin-bottom: 0px;
-    border-top: 1px solid #337ab7;
-    width: 25px;
-}
+
 section.main {
     width: 1200px;
     margin: 0 auto;
@@ -24,6 +17,31 @@ section.main {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+.ta_display-none {
+    display: none;
+}
+.ta_clear {
+    clear: both;
+}
+.ta_alerts {
+    display: none;
+    font-weight: bold;
+}
+
+.ta_arrow {
+    position: relative;
+    top: 177px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: none;
+    float: left;
+}
+
+/**
+ * Блок с информацией по приложению
+ */
+
 .ta_private-info-form {
     width: 360px;
     min-height: 400px;
@@ -31,10 +49,16 @@ section.main {
     border: 1px dashed #ddd;
     padding: 5px 10px 10px 10px;
 }
+
 .ta_private-info-btn {
     position: relative;
     top: 10px;
 }
+
+/**
+ * Блок с выбором модуля
+ */
+
 .ta_select-modules-form {
     width: 248px;
     min-height: 162px;
@@ -45,6 +69,15 @@ section.main {
     top: 113px;
     display: none;
 }
+
+label[for="ta_filter-id-to"] {
+    margin-left: 12px;
+}
+
+/**
+ * Блок с настройками фильтра
+ */
+
 .ta_filter-form {
     width: 400px;
     float: left;
@@ -52,10 +85,65 @@ section.main {
     padding: 5px 10px 10px 10px;
     display: none;
 }
-input[name="ta_filter-id-from"], input[name="ta_filter-id-to"],
-input[name="ta_filter-date-from"], input[name="ta_filter-date-to"] {
+
+input[name="ta_filter-id-from"],
+input[name="ta_filter-id-to"],
+input[name="ta_filter-date-from"],
+input[name="ta_filter-date-to"] {
     width: 147px !important;
 }
+
+/**
+ * Табы переключения вкладок
+ */
+
+.ta_tabs {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    display: none;
+    border: 1px dashed #ddd;
+    padding: 10px;
+}
+
+/**
+ * Список материалов
+ */
+
+.ta_materials {
+    margin-top: 20px;
+}
+
+.ta_hr-show-links {
+    margin-top: 4px;
+    margin-bottom: 0px;
+    border-top: 1px solid #337ab7;
+    width: 25px;
+}
+
+.ta_text-unique-btn, .ta_text-orthography-btn {
+    width: 106px;
+}
+
+.ta_work-area-th {
+    min-width: 200px;
+}
+
+.ta_ortography-error-count {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.ta_ortography-error-count:hover {
+    text-decoration: none;
+}
+
+/**
+ * Редактор
+ */
+
+.ta_result-div {
+    display: none;
+}
+
 #ta_editor {
     overflow: scroll;
     min-height: 300px;
@@ -63,6 +151,7 @@ input[name="ta_filter-date-from"], input[name="ta_filter-date-to"] {
     border: 1px solid #ddd;
     padding: 10px 20px 10px 10px;
 }
+
 .ta_correct-word {
     cursor: pointer;
     margin-left: 3px;
@@ -70,20 +159,7 @@ input[name="ta_filter-date-from"], input[name="ta_filter-date-to"] {
 .ta_incorrect-word {
     cursor: pointer;
 }
-.ta_save-material {
-    float: right;
-    margin-top: 15px;
-}
-.ta_alerts {
-    display: none;
-    font-weight: bold;
-}
-.ta_result-div {
-    display: none;
-}
-.ta_materials {
-    margin-top: 20px;
-}
+
 .ta_speller-colors-info {
     display: none;
     margin-top: 15px;
@@ -91,7 +167,7 @@ input[name="ta_filter-date-from"], input[name="ta_filter-date-to"] {
     float: left;
 }
 .ta_speller-colors-info p {
-    margin-bottom: 0px;
+     margin-bottom: 0px;
 }
 .ta_speller-colors-info span {
     width: 20px;
@@ -100,45 +176,26 @@ input[name="ta_filter-date-from"], input[name="ta_filter-date-to"] {
     position: relative;
     top: 2px;
 }
-.ta_text-unique-btn, .ta_text-orthography-btn {
-    width: 106px;
+
+.ta_editor-head {
+    margin-top: 15px;
 }
-.ta_work-area-th {
-    min-width: 200px;
+
+.ta_save-material {
+    float: right;
+    margin-top: 15px;
 }
-.ta_ortography-error-count {
-    cursor: pointer;
-    text-decoration: underline;
-}
-.ta_ortography-error-count:hover{
-    text-decoration: none;
-}
-label[for="ta_filter-id-to"] {
-    margin-left: 12px;
-}
-.ta_arrow{
-    position: relative;
-    top: 177px;
-    margin-left: 10px;
-    margin-right: 10px;
-    display: none;
-    float: left;
-}
-.ta_tabs {
-    margin-top: 40px;
-    margin-bottom: 10px;
-    display: none;
-    border: 1px dashed #ddd;
-    padding: 10px;
-}
+
+/**
+ * Графики
+ */
+
 .ta_module-graphics {
     width: 100%;
     margin-top: 20px;
 }
-.ta_categories-graphics-pie, .ta_categories-graphics-line{
+
+.ta_categories-graphics-pie, .ta_categories-graphics-line {
     width: 1100px;
     margin: 0 auto;
-}
-.ta_editor-head{
-    margin-top: 15px;
 }
